@@ -1,0 +1,25 @@
+.header-toolbar{
+    border: 1px solid #ccced1;
+    padding: 0.2rem;
+    display: flex;
+}
+
+button{
+    background-color: transparent;
+    border: none;  
+    width: 30px;
+    height: 30px; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #e1dede;
+}
+
+span{
+    font-size: 24px;
+    font-weight: bold;
+}
