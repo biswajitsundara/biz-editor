@@ -1,13 +1,9 @@
-import BoldIcon from '../header/Bold.svg';
 import './Header.css';
 const Header = () => {
     return ( <div className="header-toolbar">
-        <button>
-            <span>B</span>
-        </button>
-        <button>
-            <span><i>I</i></span>
-        </button>
+        <button className='style-bold-button'>B</button>
+        <button className='style-italics-button'>I</button>
+        <button className='style-underline-button'>U</button>
     </div> );
 }
  

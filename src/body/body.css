@@ -1,0 +1,11 @@
+.editor-body{
+    height: 200px;
+    border: 1px solid silver;
+    padding: 5px;
+    overflow-y: auto;
+    outline: none;
+}
+
+.editor-body:focus{
+    border-color:  #0d6efd;
+}
