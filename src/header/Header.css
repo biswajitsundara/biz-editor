@@ -32,3 +32,9 @@ button:hover{
 .style-bold-button{
     font-weight: bold;
 }
+
+
+.selected{
+    border: 1px solid #2196F3;
+    background-color: #fdfeff;
+}
