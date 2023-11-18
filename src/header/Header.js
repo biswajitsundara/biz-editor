@@ -19,6 +19,7 @@ const Header = () => {
       </button>
       <button className={`style-italics-button`}>I</button>
       <button className={`style-underline-button`}>U</button>
+      <button>Undo</button>
     </div>
   );
 };
