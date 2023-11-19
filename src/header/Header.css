@@ -38,3 +38,7 @@ button:hover{
     border: 1px solid #2196F3;
     background-color: #fdfeff;
 }
+
+.style-undo-button, .style-redo-button{
+    font-size: 24px;
+}

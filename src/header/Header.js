@@ -14,12 +14,12 @@ const Header = () => {
 
   return (
     <div className="header-toolbar">
-      <button className={`style-bold-button ${boldSelected}`} onClick={handleBoldStyle}>
-        B
+      <button className={`style-undo-button`}>&#x21a9;</button>
+      <button className={`style-redo-button`}>&#x21aa;</button>
+      <button className={`style-bold-button ${boldSelected}`} onClick={handleBoldStyle}>B
       </button>
       <button className={`style-italics-button`}>I</button>
       <button className={`style-underline-button`}>U</button>
-      <button>Undo</button>
     </div>
   );
 };
