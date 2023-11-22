@@ -4,7 +4,7 @@ import { useState } from "react";
 import { toggleBold, toggleItalics, toggleUnderline } from "../store/slice";
 const Header = () => {
   const dispatch = useDispatch();
-  const { bold, italic, underline } = useSelector((state) => state.format);
+  const { bold, italic, underline, undo, redo } = useSelector((state) => state.format);
 
   const boldSelected = bold ? "selected" : "";
   const italicSelected = italic ? "selected" : "";
@@ -12,8 +12,8 @@ const Header = () => {
 
   return (
     <div className="header-toolbar">
-      <button className={`style-undo-button`}>&#x21a9;</button>
-      <button className={`style-redo-button`}>&#x21aa;</button>
+      <button className={`style-undo-button`} disabled={!undo}>&#x21a9;</button>
+      <button className={`style-redo-button`} disabled={!redo}>&#x21aa;</button>
       <button
         className={`btn-bold ${boldSelected}`}
         onClick={() => dispatch(toggleBold())}
