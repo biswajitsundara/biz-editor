@@ -64,7 +64,7 @@ const Body = () => {
 
   return (
     <div className="editor-body" contenteditable="true" ref={editorRef}>
-      Hello India
+      Hello India & World
     </div>
   );
 };
